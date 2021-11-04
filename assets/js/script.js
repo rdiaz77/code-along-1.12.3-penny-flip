@@ -1,15 +1,48 @@
 // TODO: Declare any global variables we need
 
+var heads = 0
+var tails = 0
+var totalFlips = heads + tails
+var percentOfHeads = 1-(heads/totalFlips)
 
 document.addEventListener('DOMContentLoaded', function () {
-    // This is just a sanity check to make sure your JavaScript script is getting loaded
-    // You can remove it once you see it in your browser console in the developer tools
+
+
     console.log('Hi')
+    
+    let button = document.querySelector ('#flip')
+    button.addEventListener('click', function(){
+        document.getElementById('message').textContent = 'You Flipped Heads'
+        let flipHeads = math.random() < 0.5
+        if(flipHeads) {
+            heads++; 
+            totalFlips++;
+            document.getElementById('message').textContent = 'You Flipped Heads'
+            else {
+
+                tails++;
+                totalFlips++
+                document.getElementById('message').textContent = 'You Flipped Tails'
+            }
+
+
+
+    
+    })
+   
+    let clear = document.querySelector ('#clear')
+        clear.addEventListener('click', function(){
+            document.getElementById('message').textContent = "Let's get Rolling"
+        })
+
+    
 
     // TODO: Add event listener and handler for flip and clear buttons
 
+
     // Flip Button Click Handler
         // TODO: Determine flip outcome
+        
         // TODO: Update image and status message in the DOM
 
         // Update the scorboard
