@@ -17,16 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if(flipHeads) {
             heads++; 
             totalFlips++;
-            document.getElementById('message').textContent = 'You Flipped Heads'
+            document.getElementById('message').textContent = 'You Flipped Heads'}
             else {
 
                 tails++;
                 totalFlips++
                 document.getElementById('message').textContent = 'You Flipped Tails'
             }
-
-
-
     
     })
    
